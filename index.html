@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sports Ticker Directive Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/sportsticker.css">
+        <script src="scripts/prefix-free-min.js"></script>
+        <script src="scripts/prefix-free-dynamic-dom-min.js"></script>
+
+    </head>
+    <body>
+        <div id="main-container">
+            <h1>Sports Ticker Angular Directive Demo</h1>
+
+            <p>A responsive (screen width &gt; 767px) approximation of a sports news ticker, built with HTML5 and
+                Angular.js.</p>
+
+            <p>NOTE: Ticker does NOT display on mobile phones (this is intentional), and performance is not optimized for non-desktop experiences.</p>
+            <p>This was mainly just a fun side-project for me to teach myself more about CSS animations and Angular.</p>
+
+            <h3>View on GitHub</h3>
+
+            <p>Code available under MIT license.</p>
+
+            <p>Acknowledgements:
+                <a href="http://jquery.com">jquery</a>,
+                <a href="http://angularjs.org">angular</a>,
+                <a href="http://modernizr.com">modernizr</a>,
+                <a href="http://srobbin.com/jquery-plugins/backstretch/">backstretch</a>,
+                <a href="http://leaverou.github.io/prefixfree/">prefix-free</a>,
+                <a href="http://necolas.github.io/normalize.css/">normalize.css</a>,
+                <a href="https://github.com/ospreydawn/nfllogoredesign">faux NFL logos</a></p>
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_twitter"></a>
+                <a class="addthis_button_google_plusone_share"></a>
+                <a class="addthis_button_email"></a>
+                <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=teddyruxpin2000"></script>
+            <!-- AddThis Button END -->
+            <hr/>
+            <p style="font-size:small">Copyright &copy 2013 <a style="text-decoration:none"
+                                                               href="mailto:paul(removethis)pullen@gmail.com">Paul Pullen</a>
+            </p>
+
+            <p style="font-size:small">This site is not affiliated with or endorsed by any professional sports organization,
+                corporation, or other business entity.</p>
+        </div>
+
+        <!--bottomLine directive-->
+        <div ng-app="sportsTickerDemo" ng-controller="TickerFeedCtrl">
+            <sportsticker feed="feed" message-delay="4000" scroll-speed-factor="6.25"></sportsticker>
+        </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--<script>-->
+        <!--var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];-->
+        <!--(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];-->
+        <!--g.src='//www.google-analytics.com/ga.js';-->
+        <!--s.parentNode.insertBefore(g,s)}(document,'script'));-->
+        <!--</script>-->
+
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="scripts/sportsTickerDemo.js"></script>
+        <script src="scripts/sportsTickerModule.js"></script>
+        <script src="scripts/jquery-backstretch.min.js"></script>
+
+        <script type="text/javascript">
+            $(function () {
+                $.backstretch("images/sportscenter-bg.png");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+[
+    {
+        "topic" : "Full Width",
+        "items" : [
+            [
+                {
+                    "type" : "full",
+                    "messages" : [
+                        "This is a short message.",
+                        "This is a longer message that should scroll off to the left because it's long."
+                    ]
+                }
+            ]
+        ]
+    },
+    {
+        "topic" : "Badges",
+        "items" : [
+            [
+                {
+                    "type" : "full-with-badge",
+                    "badgeColor" : "blue",
+                    "badgeText" : "Badge One",
+                    "messages" : [
+                        "Messages can have descriptive badges as well."
+                    ]
+                }
+            ],
+            [
+                {
+                    "type" : "full-with-badge",
+                    "badgeColor" : "orange",
+                    "badgeText" : "Badge Two",
+                    "messages" : [
+                        "Badges can be any color you desire!",
+                        "All feed types can also contain multiple messages."
+                    ]
+                }
+            ]
+        ]
+    },
+    {
+        "topic" : "Match-ups",
+        "items" : [
+            [
+                {
+                    "type" : "matchup",
+                    "team1" : {
+                        "logo" : "images/afcw_denver-only.png",
+                        "name" : "Denver",
+                        "rank" : "1"
+                    },
+                    "team2" : {
+                        "logo" : "images/afcs_indianapolis-only.png",
+                        "name" : "Indianapolis",
+                        "rank" : null
+                    },
+                    "messages" : [
+                        "Show upcoming matchups with logos and optional rankings.",
+                        "Pretty cool, eh?"
+                    ]
+                }
+            ],
+            [
+                {
+                    "type" : "matchup",
+                    "team1" : {
+                        "logo" : "images/nfcn_chicago-only.png",
+                        "name" : "Chicago"
+                    },
+                    "team2" : {
+                        "logo" : "images/nfcn_greenbay-only.png",
+                        "name" : "Green Bay"
+                    },
+                    "messages" : [
+                        "Another matchup."
+                    ]
+                }
+            ]
+        ]
+    },
+    {
+        "topic" : "Scores",
+        "items" : [
+            [
+                {
+                    "type" : "scores",
+                    "isFinal" : true,
+                    "team1" : {
+                        "rank" : 12,
+                        "name" : "Cowboys",
+                        "points" : 41
+                    },
+                    "team2" : {
+                        "rank" : 1,
+                        "name" : "Broncos",
+                        "points" : 44
+                    },
+                    "messages" : [
+                        "Scores can be displayed 2 different ways.",
+                        "This is the default scores template.",
+                        "If the score is final, the winner is highlighted."
+                    ]
+                },
+                {
+                    "type" : "scores-abbr",
+                    "isFinal" : true,
+                    "team1" : {
+                        "abbr" : "Dal",
+                        "points" : 41
+                    },
+                    "team2" : {
+                        "rank" : 1,
+                        "abbr" : "Den",
+                        "points" : 44
+                    },
+                    "messages" : [
+                        "This is the abbreviated scores template.",
+                        "More room for details."
+                    ]
+                }
+            ]
+        ]
+    }
+]

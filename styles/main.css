@@ -1,0 +1,23 @@
+body {
+    font-family: 'Titillium Web',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+#main-container {
+    max-width: 80%;
+    margin: 5% auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 20px;
+    background: darkred;
+    opacity: .75;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+#main-container a {
+    color: orange;
+}
+.addthis_toolbox.addthis_default_style.addthis_32x32_style {
+    margin: 20px auto;
+    width: 260px;
+}
