@@ -14,7 +14,7 @@ This was a fun-side project I used to teach myself more about Angular and CSS an
 ```<sportsticker feed="feed" message-delay="4000" scroll-speed-factor="6.25"></sportsticker>```<br/><br />
 4. Have an Angular controller provide a JSON "feed" to the directive (see feed.json for examples of all item types)
 
-See the demo app for a complete example.
+<a href="http://paulpullen.github.io/sportsticker/">See the demo app for a complete example.</a>
 
 ##Caveats:
 The ticker is hidden on mobile devices (i.e., for devices with a max-width of 767px), and performance on tablets is likely shaky at best.  I just didn't think I could provide a nice mobile experience with the limited screen real estate, and this code isn't optimized for the non-desktop experience (e.g., no hardware-accelartion on animations).  In fact, the code isn't really optimized at all.  As I stated, this was just a side-project, and should not be viewed as battle-tested, production-ready code.
