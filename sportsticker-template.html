@@ -1,0 +1,47 @@
+<div id="st-wrapper">
+    <div id="st-top"></div>
+    <div id="st-ticker-container" class="clearfix">
+
+        <div id="st-ticker-left">
+            <!--topic intro-->
+            <div id="st-ticker-intro" style="display: block;">
+                <ul class="inline">
+                    <li>&nbsp;</li>
+                    <li ng-repeat="feedItem in getTopics() track by $index"><h3>{{ feedItem.topic }}</h3></li>
+                </ul>
+            </div>
+
+            <!--end topic intro-->
+
+            <!--topic-->
+            <div id="st-ticker-topic" style="display:none;">
+                <h3>{{ feed[currentTopic].topic }}</h3>
+                <ul class="inline">
+                    <li ng-repeat="items in indicators"><span data-index="{{ $index }}" class="indicator" ng-class="{glow:$first}"></span></li>
+                </ul>
+            </div>
+            <!--end topic-->
+
+            <!--st-ticker-->
+            <div id="st-ticker-main-container" style="opacity: 0">
+                <div id="st-ticker-primary"></div>
+                <div class="st-ticker-shadow"></div>
+            </div>
+            <!--end st-ticker-->
+
+        </div>
+
+        <div id="st-ticker-right">
+            <!--logo-->
+            <div id="st-ticker-logo">
+                <img src="images/ticker-logo.png"/>
+            </div>
+            <!--end logo-->
+        </div>
+
+        <div id="st-ticker-divider"></div>
+        <div id="st-ticker-bottom"></div>
+
+    </div>
+</div>
+
