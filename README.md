@@ -17,7 +17,7 @@ This was a fun-side project I used to teach myself more about Angular and CSS an
 <a href="http://paulpullen.github.io/sportsticker/">See the demo app for a complete example.</a>
 
 ##Caveats:
-The ticker is hidden on mobile devices (i.e., for devices with a max-width of 767px), and performance on tablets is likely shaky at best.  I just didn't think I could provide a nice mobile experience with the limited screen real estate, and this code isn't optimized for the non-desktop experience (e.g., no hardware-accelartion on animations).  In fact, the code isn't really optimized at all.  As I stated, this was just a side-project, and should not be viewed as battle-tested, production-ready code.
+The ticker is hidden on mobile devices (i.e., for devices with a max-width of 767px), and performance on tablets is likely shaky at best.  I just didn't think I could provide a nice mobile experience with the limited screen real estate, and this code isn't optimized for the non-desktop experience (e.g., no hardware-acceleration on animations).  In fact, the code isn't really optimized at all.  As I stated, this was just a side-project, and should not be viewed as battle-tested, production-ready code.
 
 I don't have any immediate plans to address these limitations, so feel free to clone and do with this what you wish, if anything.  Code is MIT licensed, so go crazy.
 
